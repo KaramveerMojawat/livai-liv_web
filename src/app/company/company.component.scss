@@ -1,0 +1,46 @@
+.container{
+  overflow:hidden;
+  box-sizing: border-box;
+    align-items: center;
+}
+
+.container-fluid{
+  overflow:hidden;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.compant-container{
+  background:white;
+    color: black;
+}
+p{
+    font-weight:bold;
+    font-size:14px;
+}
+h2{
+    font-size:28px;
+}
+.containBgWithContent{
+    background: url('../../assets/images/bg.png');
+    height:600px;
+     color: white;
+}
+.card-text{
+    color: black;
+    font-weight:100;
+}
+h4{
+    color: #1fbedc;
+    font-size:14px;
+}
+.middle{
+    padding: 10% 0;
+}
+@media screen and (min-width: 720px) {
+    margin-left:0;
+    margin-right:0;
+    .middle{
+        padding:0;
+    }
+}

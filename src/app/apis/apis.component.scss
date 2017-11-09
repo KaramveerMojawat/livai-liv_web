@@ -1,0 +1,51 @@
+.container{
+  overflow:hidden;
+  box-sizing: border-box;
+    align-items: center;
+    text-align:center;
+}
+
+.container-fluid{
+  overflow:hidden;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+*{
+  background:rgb(49,49,57);
+    color: white;
+}
+
+.no_border{
+    border:none;
+}
+.no_color{
+    background: none;
+}
+.convert-speech{
+    display:block;
+
+}
+p{
+    line-height:2em;
+}
+
+
+.no-line-height{
+    line-height: 0.8em;
+}
+
+.yourspeech{
+    background: rgb(69,222,210);
+    padding: 4% 0 4% 0;
+    border-radius:5px
+}
+.row{
+    line-height: 3em;
+    padding: 2% 0 2% 0;
+
+}
+@media screen and (min-width: 480px) {
+    margin-left:0;
+    margin-right:0;
+}

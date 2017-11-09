@@ -1,0 +1,93 @@
+.home-container{
+    background-image: linear-gradient(to bottom, #3430b6, #49addb);
+}
+
+*{
+    color: white;
+}
+
+.no_border{
+    border:none;
+}
+.no_color{
+    background: none;
+}
+.convert-speech{
+    display:block;
+
+}
+p{
+    line-height:2em;
+}
+
+
+.no-line-height{
+    line-height: 0.8em;
+}
+
+.yourspeech{
+
+    padding: 4% 0 4% 0;
+    border-radius:5px
+}
+.row{
+    line-height: 3em;
+    padding: 2% 0 2% 0;
+
+}
+
+
+div.card::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+
+
+div.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+     background: rgb(69,222,210);
+}
+
+
+div.press-container::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+
+.press-container{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    background-color: white;
+}
+
+.dropdown-button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 200%;
+    max-width:300px;
+    border-radius:20px;
+}
+
+.dropdown-item{
+  text-align: left;
+  color: #3b4452;
+}
+
+@media screen and (min-width: 480px) {
+    margin-left:0;
+    margin-right:0;
+}
+

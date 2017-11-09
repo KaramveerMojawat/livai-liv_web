@@ -1,0 +1,21 @@
+header-container{
+    background: rgb(48,35,174);
+    color: white;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.no_border{
+    border:none;
+}
+.no_color{
+    background: none;
+}
+.modal-container{
+    position:relative;
+    background: white;
+
+}
+input{
+    width:auto;
+}
