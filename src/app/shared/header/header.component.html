@@ -1,27 +1,33 @@
-<div class='container-fluid header-container' >
-  <div class='row'>
-    <div class='col-md-12 col-xs-12'>
-      <nav class="navbar fixed-top no_border">
-        <div class="row header-container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse">
-            <a class="navbar-brand" href="#"><img src='../../assets/images/livai.png'/></a>
-            <ul class='nav navbar-tabs navbar-right'>
-              <li routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['']"> Home </a></li>
-              <li routerLinkActive='active'><a [routerLink]="['api']"> Apis </a></li>
-              <li routerLinkActive='active'><a [routerLink]="['company']"> Company </a></li>
-              <li routerLinkActive='active'><a [routerLink]="['career']"> Career </a></li>
-              <li>
-            <div class='container modal-container navbar-form navbar-left'>
-              <div class='row'>
-                <div class='col-md-8 col-xs-8'>
-                <ng-template #content let-c="close" let-d="dismiss" class=' marginTop'>
+
+<nav class="navbar navbar-fixed-top" headerBackground>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+<a class="navbar-brand" href="#"><img class='' src='../../../assets/images/livai.png'/></a>
+
+    <div class="navbar-collapse collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right flex-row">
+        <li routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['']"> Home </a></li>
+        <li routerLinkActive='active'><a [routerLink]="['api']"> Apis </a></li>
+        <li routerLinkActive='active'><a [routerLink]="['company']"> Company </a></li>
+        <li routerLinkActive='active'><a [routerLink]="['career']"> Career </a></li>
+        <li>
+          <button class="button" (click)="open(content)">Contact Us</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class='container  navbar-form navbar-left'>
+                <ng-template #content let-c="close" let-d="dismiss" class='modal-container'>
                   <div class="modal-header">
                     <h4 class="modal-title">Thank you for your interest in Liv.
 We’re excited to hear from you.</h4>
@@ -29,37 +35,57 @@ We’re excited to hear from you.</h4>
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <form class= 'form-group' (ngSubmit)="onSubmit(f)" #f="ngForm">
-                  <div class="modal-body">
-
-                      <p><input id="name" class="form-control" type="text" placeholder="Name"  /></p>
-                      <p><input id="email" class="form-control" type="text" placeholder="Email"   /></p>
-                      <p><textarea id="message" class="form-control" placeholder="Message"  > </textarea></p>
-                      <p><input id="phnumber" class="form-control" placeholder="Phone Number" /></p>
-
-
-                  </div>
-                  <div class="modal-footer">
-                    <div class='row'>
-                      <div class='col-md-6 col-xs-6'>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                      </div>
-                      <div class='col-md-6 col-xs-6'>
-                    <button type="button"  (click)="c('Close click')" class="btn btn-default">Close</button>
+                  <form class='form-group' (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    <div class="modal-body">
+                      <p>
+                        <input id="name" class="form-control" type="text" placeholder="Name" />
+                      </p>
+                      <p>
+                        <input id="email" class="form-control" type="text" placeholder="Email" />
+                      </p>
+                      <p>
+                        <textarea id="message" class="form-control" placeholder="Message"> </textarea>
+                      </p>
+                      <p>
+                        <input id="phnumber" class="form-control" placeholder="Phone Number" />
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <div class='row'>
+                        <div class='col-md-6 col-xs-6'>
+                          <button type="submit" class="btn btn-default button">Submit</button>
+                        </div>
+                        <div class='col-md-6 col-xs-6'>
+                          <button type="button" (click)="c('Close click')" class="btn btn-default">Close</button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
                 </ng-template>
-                </div>
-              </div>
-             </div>
-                <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Contact Us</button>
-              </li>
-            </ul>
           </div>
-        </div>
-      </nav>
-    </div>
+<!--  <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top py-4" >
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <strong><a class="navbar-brand ml-5 f21" href="#">Liv.ai</a></strong>
+-->
+<!--justify-content-end(shift right)-->
+<!--   <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent" headerBackground>
+    <ul class="navbar-nav">
+      <li class="nav-item"  routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link"[routerLink]="['']" >Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive='active' >
+        <a class="nav-link" [routerLink]="['api']" >APIs</a>
+      </li>
+      <li class="nav-item" routerLinkActive='active' >
+        <a class="nav-link" [routerLink]="['company']">Company</a>
+      </li>
+      <li class="nav-item" routerLinkActive='active' >
+        <a class="nav-link" [routerLink]="['career']">Careers</a>
+      </li>
+    </ul>
+      <button class="btn my-2 my-sm-0" type="submit">Contact Us</button>
   </div>
-</div>
+</nav>
+ -->

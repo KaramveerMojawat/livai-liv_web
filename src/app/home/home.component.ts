@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
         //var idAttr = target.attributes.id.nodeValue;
         /*var value = idAttr.nodeValue;*/
         console.log(target.firstChild.data);
-        this.selectedLanguage = target.firstChild.data
+        this.selectedLanguage = target.firstChild.data;
     }
 
     ngOnInit(): void {

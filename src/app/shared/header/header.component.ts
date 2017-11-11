@@ -12,6 +12,16 @@ export class HeaderComponent implements OnInit {
 
   constructor(private modalService: NgbModal) {}
 
+isCollapsed: boolean = false;
+
+  collapsed(event: any): void {
+    console.log(event);
+  }
+
+  expanded(event: any): void {
+    console.log(event);
+  }
+
   open(content) {
     this.modalService.open(content).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
