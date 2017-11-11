@@ -1,8 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+*{
+  margin:0;
+  padding:0;
+
+  -webkit-box-sizing: border-box;
+  -mob-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+
 body {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
-  justify-content: center;
 }
 ul {
   padding: 0;
@@ -29,7 +37,3 @@ text-align: center;
   color: var(--white);
 }
 
-@media screen and (min-width: 480px) {
-    margin-left:0;
-    margin-right:0;
-}

@@ -1,76 +1,82 @@
-
-<nav class="navbar navbar-fixed-top" headerBackground>
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-    </div>
-
-<a class="navbar-brand" href="#"><img class='' src='../../../assets/images/livai.png'/></a>
-
-    <div class="navbar-collapse collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right flex-row">
-        <li routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['']"> Home </a></li>
-        <li routerLinkActive='active'><a [routerLink]="['api']"> Apis </a></li>
-        <li routerLinkActive='active'><a [routerLink]="['company']"> Company </a></li>
-        <li routerLinkActive='active'><a [routerLink]="['career']"> Career </a></li>
-        <li>
-          <button class="button" (click)="open(content)">Contact Us</button>
-        </li>
-      </ul>
+<div class='navbar-fixed-top'>
+  <div class='row'>
+    <div class='col-md-12 col-xs-12' headerBackground>
+      <div class='row'>
+        <div class='col-md-2 col-xs-0'>
+        </div>
+        <div class='col-md-8 col-xs-12'>
+          <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header pull-right">
+                <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <img src='../../../assets/images/hamburger.svg'/>
+                </a>
+              </div>
+              <a class="navbar-brand" href="#"><img class='' src='../../../assets/images/livai.png'/></a>
+              <div class="navbar-collapse collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right flex-row nav nav-pills no_border">
+                  <li class='nav-item' routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['']"> Home </a></li>
+                  <li class='nav-item' routerLinkActive='active'><a [routerLink]="['api']"> Apis </a></li>
+                  <li class='nav-item' routerLinkActive='active'><a [routerLink]="['company']"> Company </a></li>
+                  <li class='nav-item' routerLinkActive='active'><a [routerLink]="['career']"> Career </a></li>
+                  <li class='nav-item'>
+                    <button class="btn btn-success" (click)="open(content)">Contact Us</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class='col-md-2 col-xs-0'>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
-
-<div class='container  navbar-form navbar-left'>
-                <ng-template #content let-c="close" let-d="dismiss" class='modal-container'>
-                  <div class="modal-header">
-                    <h4 class="modal-title">Thank you for your interest in Liv.
+  <div class='container  navbar-form navbar-left'>
+    <ng-template #content let-c="close" let-d="dismiss" class='modal-container'>
+      <div class="modal-header">
+        <h4 class="modal-title">Thank you for your interest in Liv.
 We’re excited to hear from you.</h4>
-                    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <form class='form-group' (ngSubmit)="onSubmit(f)" #f="ngForm">
-                    <div class="modal-body">
-                      <p>
-                        <input id="name" class="form-control" type="text" placeholder="Name" />
-                      </p>
-                      <p>
-                        <input id="email" class="form-control" type="text" placeholder="Email" />
-                      </p>
-                      <p>
-                        <textarea id="message" class="form-control" placeholder="Message"> </textarea>
-                      </p>
-                      <p>
-                        <input id="phnumber" class="form-control" placeholder="Phone Number" />
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <div class='row'>
-                        <div class='col-md-6 col-xs-6'>
-                          <button type="submit" class="btn btn-default button">Submit</button>
-                        </div>
-                        <div class='col-md-6 col-xs-6'>
-                          <button type="button" (click)="c('Close click')" class="btn btn-default">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </ng-template>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class='form-group' (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="modal-body">
+          <p>
+            <input id="name" class="form-control" type="text" placeholder="Name" />
+          </p>
+          <p>
+            <input id="email" class="form-control" type="text" placeholder="Email" />
+          </p>
+          <p>
+            <textarea id="message" class="form-control" placeholder="Message"> </textarea>
+          </p>
+          <p>
+            <input id="phnumber" class="form-control" placeholder="Phone Number" />
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div class='row'>
+            <div class='col-md-6 col-xs-6'>
+              <button type="submit" class="btn btn-default button">Submit</button>
+            </div>
+            <div class='col-md-6 col-xs-6'>
+              <button type="button" (click)="c('Close click')" class="btn btn-default">Close</button>
+            </div>
           </div>
-<!--  <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top py-4" >
+        </div>
+      </form>
+    </ng-template>
+  </div>
+  <!--  <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top py-4" >
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <strong><a class="navbar-brand ml-5 f21" href="#">Liv.ai</a></strong>
 -->
-<!--justify-content-end(shift right)-->
-<!--   <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent" headerBackground>
+  <!--justify-content-end(shift right)-->
+  <!--   <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent" headerBackground>
     <ul class="navbar-nav">
       <li class="nav-item"  routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}">
         <a class="nav-link"[routerLink]="['']" >Home<span class="sr-only">(current)</span></a>

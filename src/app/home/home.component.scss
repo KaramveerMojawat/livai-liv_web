@@ -1,6 +1,9 @@
 .home-container{
     background-image: linear-gradient(to bottom, #3430b6, #49addb);
 }
+   .padding-top{
+  padding-top:70px;
+}
 
 *{
     color: white;
@@ -86,8 +89,4 @@ div.press-container::after {
   color: #3b4452;
 }
 
-@media screen and (min-width: 480px) {
-    margin-left:0;
-    margin-right:0;
-}
 

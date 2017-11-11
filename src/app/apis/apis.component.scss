@@ -1,3 +1,6 @@
+.padding-top{
+  padding-top:70px;
+}
 .container{
   overflow:hidden;
   box-sizing: border-box;
@@ -11,7 +14,7 @@
   align-items: center;
 }
 
-*{
+.api-component{
   background:rgb(49,49,57);
     color: white;
 }
@@ -45,7 +48,20 @@ p{
     padding: 2% 0 2% 0;
 
 }
-@media screen and (min-width: 480px) {
-    margin-left:0;
-    margin-right:0;
+.shadow {
+  padding-top: 30px;
+    border-radius: 4px;
+    background-color: #313139;
+   -moz-box-shadow:     0 2px 24px 0 #474747;
+   -webkit-box-shadow:  0 2px 24px 0 #474747;
+   box-shadow: 0 2px 24px 0 #474747;
+   height:500px;
+   cursor:pointer;
+}
+.shadow:hover {
+    background: black;
+}
+
+.link{
+    color:#1ebfdc;
 }
