@@ -15,8 +15,16 @@
     left: 0;
     top:-100px;
     text-align: left;
+     border-radius: 10px;
+  background-color: #edf4f6;
+  box-shadow: 0 2px 84px 0 rgba(0, 0, 0, 0.2);
+
 }
 input{
+    font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  color: #3b4452;
     width:auto;
 }
 
@@ -26,13 +34,33 @@ input{
 .success{
     background: blue;
 }
+.modal_btn{
+    width: 75px;
+  height: 27px;
+padding: 4px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 84px 0 rgba(0, 0, 0, 0.2);
+}
 .button{
     background-color: transparent;
     border: 2px solid #fff;
     width: 100%;
     max-width:300px;
     border-radius:20px;
+     color: #3b4452;
 }
+
+.buttonhamburger{
+    border: 2px solid #fff;
+    width: 100%;
+    max-width:300px;
+    border-radius:20px;
+}
+
 .navbar-brand
 {
     position: absolute;
@@ -40,6 +68,21 @@ input{
     left: 0;
     text-align: left;
 }
+
 .navbar-toggle {
     z-index:3;
+}
+
+.navbar>.container, .navbar>.container-fluid {
+    display: block
+}
+
+.flex_row{
+    display:flex;
+}
+
+@media screen and (min-width: 720px) {
+    .flex_row{
+    display:block;
+}
 }

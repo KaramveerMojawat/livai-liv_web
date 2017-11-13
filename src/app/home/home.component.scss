@@ -1,5 +1,6 @@
 .home-container{
     background-image: linear-gradient(to bottom, #3430b6, #49addb);
+overflow-x:hidden;
 }
    .padding-top{
   padding-top:70px;
@@ -49,6 +50,7 @@ div.card::after {
     left: 15%; /* one half of the remaining 30% */
     height: 100px;
     bottom: 0;
+
 }
 
 
@@ -74,6 +76,15 @@ div.press-container::after {
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       text-align: center;
     background-color: white;
+}
+
+.button{
+    background-color: transparent;
+    padding:10px;
+    border: 2px solid #fff;
+    width: 100%;
+    max-width:500px;
+    border-radius:20px;
 }
 
 .dropdown-button{

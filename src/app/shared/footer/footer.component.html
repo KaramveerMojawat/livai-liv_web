@@ -1,19 +1,19 @@
-<div class='container-fluid footer-container'>
+<div class='container-fluid footer-container'  [ngStyle] = "{backgroundColor: getColor()}">
   <div class='container'>
     <div class='row'>
       <div class='col-md-12 col-xs-10'>
         <div class='row'>
           <div class='col-md-12 col-xs-12  text-center'>
-            <h2>
+            <h2 [ngStyle] = "{color: getFontColor()}">
             Contact us
           </h2>
           </div>
         </div>
         <div class='row'>
           <div class='col-md-12 col-xs-12'>
-            <p class='text-center'>
+            <h3 class='text-center hello-liv-color'>
               hello@liv.ai
-            </p>
+            </h3>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
       <div class='col-md-12 col-xs-10'>
         <div class='row'>
           <div class='col-md-12 col-xs-12'>
-            <p class='text-center'>
+            <p class='text-center' [ngStyle] = "{color: getCopyRightColor()}">
               ©2017 Liv.ai
             </p>
           </div>

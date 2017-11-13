@@ -18,6 +18,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { CollapseModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
   	NgbModule.forRoot(),
     FormsModule,
+    CollapseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
